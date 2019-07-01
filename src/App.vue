@@ -77,7 +77,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 2rem;
+  margin: 2rem 2rem 0 2rem;
 
   &__button {
     padding: 0.5rem;

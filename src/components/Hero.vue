@@ -26,7 +26,7 @@ export default {
 
 <style lang="scss">
 .container {
-  margin: 1rem 2rem;
+  margin: 0.5rem 2rem;
 }
 
 .hero {
