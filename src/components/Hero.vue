@@ -3,7 +3,7 @@
     <div class="hero">
       <div class="hero__text">
         <h1>Hi there my name is Tuan Truong,</h1>
-        <h1>Developer & Designer.</h1>
+        <h2>Developer & Designer.</h2>
         <p class="hero__text--sub-header">
           I always love solving problems and creating things out of nothing.
           Building web applications is the perfect medium for me. Whether you need me to design
@@ -11,9 +11,7 @@
         </p>
         <p class="hero__text--email">tuan.truong.dsgn@gmail.com</p>
       </div>
-
       <img class="hero__image" src="@/assets/undraw_web_developer_p3e5.png" alt="web">
-
     </div>
   </div>
 </template>
@@ -66,16 +64,6 @@ export default {
     grid-template-areas:
   'image'
   'text';
-
-  &__image {
-
-  }
-
-  &__text {
-  }
-
   }
 }
-
-
 </style>

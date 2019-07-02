@@ -20,21 +20,24 @@
         contact
       </span>
       <span class="nav__link">
-        <button class="nav__button">hire me</button>
+        <button class="nav__button">contact</button>
       </span>
     </div>
   </nav>
 
-  <Hero  msg="Welcome to Your Vue.js App"/>
+  <Hero />
+  <About />
   </div>
 </template>
 
 <script>
-import Hero from './components/Hero.vue';
+import Hero from '@/components/Hero.vue';
+import About from '@/components/About.vue';
 
 export default {
   components: {
     Hero,
+    About,
   },
   data() {
     return {
@@ -66,10 +69,6 @@ export default {
 <style lang="scss">
 #app {
   max-width: 960px;
-  display: grid;
-  grid-template-areas:
-  'nav'
-  'content';
   margin: auto;
 }
 
@@ -107,9 +106,9 @@ export default {
   margin-left: 2rem;
 }
 
-
 .nav__menu {
   display: none;
+  cursor: pointer;
 }
 
 @media(max-width: 700px) {
