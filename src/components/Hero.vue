@@ -1,69 +1,145 @@
 <template>
-  <div class="container">
-    <div class="hero">
-      <div class="hero__text">
-        <h1>Hi there my name is Tuan Truong,</h1>
-        <h2>Developer & Designer.</h2>
-        <p class="hero__text--sub-header">
-          I always love solving problems and creating things out of nothing.
-          Building web applications is the perfect medium for me. Whether you need me to design
-          and build your vision I’m your guy.
-        </p>
-        <p class="hero__text--email">tuan.truong.dsgn@gmail.com</p>
-      </div>
-      <img class="hero__image" src="@/assets/undraw_web_developer_p3e5.png" alt="web">
-    </div>
+  <div class="hero">
+    <h1>
+      <a href=""
+        class="typewrite"
+        data-period="2000"
+        data-type='[
+        "Hi there", "My name is Tuan Truong.", "I Love Design.", "I Love to Develop." ]'>
+        <span class="wrap"></span>
+      </a>
+    </h1>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: 'HelloWorld',
+  data() {
+    return {
+      toRotate: null,
+      el: null,
+      loopNum: 0,
+      period: parseInt(this.period, 10) || 5000,
+      text: '',
+      isDeleting: false,
+    };
+  },
+  methods: {
+    tick() {
+      const i = this.loopNum % this.toRotate.length;
+      const fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = `<span class="wrap">${this.txt}</span>`;
+
+      const that = this;
+      let delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 900;
+      }
+
+      setTimeout(() => {
+        that.tick();
+      }, delta);
+    },
+    textType(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 5000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    },
+  },
+  mounted() {
+    const elements = document.getElementsByClassName('typewrite');
+    for (let i = 0; i < elements.length; i++) {
+      const toRotate = elements[i].getAttribute('data-type');
+      const period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        this.textType(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    const css = document.createElement('style');
+    css.type = 'text/css';
+    css.innerHTML = '.typewrite > .wrap { border-right: 0.08em solid #fff}';
+    document.body.appendChild(css);
+  },
 };
 </script>
 
 <style lang="scss">
-.container {
-  margin: 0.5rem 2rem;
-}
-
 .hero {
-  grid-area: hero;
+  height: -webkit-fill-available;
+  background: url('../assets/hero-wallpaper.png') center;
+  background-size: cover;
+
+  /* Grid styles */
   display: grid;
-  align-self: center;
-  grid-template-areas:
-  'text image image';
-  margin-top: 2rem;
-
-  &__text {
-    color: #3B4252;
-    grid-area: text;
-
-    &--sub-header {
-      color: #adb5bd;
-    }
-  }
-
-  &__image {
-    grid-area: image;
-    height: auto;
-    max-width: 100%;
-  }
-
-}
-@media(max-width: 700px) {
-    .hero {
-      grid-template-areas:
-    'image'
-    'text';
-    }
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
-@media(max-width: 500px) {
-  .hero {
-    grid-template-areas:
-  'image'
-  'text';
-  }
+.typewrite {
+  color: #e9ecef;
+  font-size: 2rem;
+  font-weight: 100;
+  text-decoration: none;
 }
+// .hero {
+//   grid-area: hero;
+//   display: grid;
+//   align-self: center;
+//   grid-template-areas:
+//   'text image image';
+//   margin-top: 2rem;
+
+//   &__text {
+//     color: #3B4252;
+//     grid-area: text;
+
+//     &--sub-header {
+//       color: #adb5bd;
+//     }
+//   }
+
+//   &__image {
+//     grid-area: image;
+//     height: auto;
+//     max-width: 100%;
+//   }
+
+// }
+// @media(max-width: 700px) {
+//     .hero {
+//       grid-template-areas:
+//     'image'
+//     'text';
+//     }
+// }
+
+// @media(max-width: 500px) {
+//   .hero {
+//     grid-template-areas:
+//   'image'
+//   'text';
+//   }
+// }
 </style>

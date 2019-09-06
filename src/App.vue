@@ -68,7 +68,7 @@ export default {
 
 <style lang="scss">
 #app {
-  max-width: 960px;
+  // max-width: 960px;
   margin: auto;
 }
 
@@ -76,13 +76,17 @@ export default {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  margin: 2rem 2rem 0 2rem;
+  background: #121b30;
+  color: #e9ecef;
+  padding: 1rem 2rem 0 2rem;
 
   &__button {
     padding: 0.5rem;
     border: 3px solid #3B4252;
     border-radius: 5px;
     width: 6rem;
+    background: #121b30;
+    color: #e9ecef;
 
     &:hover {
       cursor: pointer;
@@ -100,6 +104,7 @@ export default {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  color:#e9ecef;
 }
 
 .nav__link {
@@ -119,7 +124,7 @@ export default {
     right: 0;
     flex-direction: column;
     text-align: right;
-    background: #fff;
+    background: #121b30;
     width: 100%;
     padding: 0 2rem 0.5rem 2rem;
   }
@@ -133,42 +138,4 @@ export default {
     justify-content: flex-end;
   }
 }
-
-// .nav {
-//   display: flex;
-//   align-items: center;
-//   margin: 1rem;
-
-//   &__logo {
-//     margin-right: auto;
-//     color: #3B4252;
-//     font-weight: 800;
-//   }
-
-//   &__button {
-//     padding: 0.5rem;
-//     border: 3px solid #3B4252;
-//     border-radius: 5px;
-//     width: 6rem;
-
-//     &:hover {
-//       cursor: pointer;
-//     }
-//   }
-
-//   &__links {
-//     text-decoration: none;
-//     margin: 0 4rem;
-
-//     &:hover {
-//       font-weight: 700;
-//     }
-
-//     &:visited {
-//       color: #3B4252;
-//     }
-
-//   }
-// }
-
 </style>
