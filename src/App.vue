@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import Hero from '@/components/Hero.vue';
+import Hero from '@/components/hero/Hero.vue';
 import About from '@/components/About.vue';
 
 export default {
