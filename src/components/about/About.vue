@@ -21,48 +21,5 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.container {
-  margin: 0.5rem 2rem;
-}
-
-.about {
-  grid-area: about;
-  display: grid;
-  align-self: center;
-  grid-template-areas:
-  'text image image';
-  margin-top: 2rem;
-
-  &__text {
-    color: #3B4252;
-    grid-area: text;
-
-    &--sub-header {
-      color: #adb5bd;
-    }
-  }
-
-  &__image {
-    grid-area: image;
-    height: auto;
-    max-width: 100%;
-  }
-
-}
-@media(max-width: 700px) {
-    .about {
-      grid-template-areas:
-    'image'
-    'text';
-    }
-}
-
-@media(max-width: 500px) {
-  .about {
-    grid-template-areas:
-  'image'
-  'text';
-  }
-}
+<style src="./about.scss" lang="scss">
 </style>

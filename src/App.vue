@@ -32,7 +32,7 @@
 
 <script>
 import Hero from '@/components/hero/Hero.vue';
-import About from '@/components/About.vue';
+import About from '@/components/about/About.vue';
 
 export default {
   components: {
