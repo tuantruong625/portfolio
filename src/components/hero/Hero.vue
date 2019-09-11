@@ -5,7 +5,7 @@
       <a href="#"
         class="hero__typewrite"
         data-period="2000"
-        data-type='["I love design." , "Passionate for writing clean and maintainable code."]'>
+        data-type='["I love designing" , "and crushing code."]'>
         <span class="wrap"></span>
       </a>
     </h1>
