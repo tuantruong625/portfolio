@@ -14,6 +14,12 @@
       class="btn btn---white btn--animated">
       Check out my work 👇
     </a>
+    <div class="social social--animated">
+      <a href="https://www.linkedin.com/in/tuanntruong/"><font-awesome-icon class="social__links" :icon="[ 'fab', 'linkedin' ]" /></a>
+      <a href="https://github.com/tuantruong625"><font-awesome-icon class="social__links" :icon="[ 'fab', 'github' ]" /></a>
+      <a href="https://dribbble.com/tuanntruong"><font-awesome-icon class="social__links" :icon="[ 'fab', 'dribbble' ]" /></a>
+    </div>
+
   </div>
 </template>
 

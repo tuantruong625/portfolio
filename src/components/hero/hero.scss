@@ -104,6 +104,33 @@
     }
 }
 
+.social {
+    // background: red;
+    margin-top: 1.5rem;
+    &--animated {
+        animation: move-bottom 0.5s ease-out 0.75s;
+        animation-fill-mode: backwards;
+    }
+
+    &__links {
+        color: #fff;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+        border-radius: 2rem;
+        transition: all 0.2s;
+
+        &:hover {
+            box-shadow: 0 1rem 2rem rgba(#e2e2e2, 0.2);
+            transform: translateY(-0.3rem);
+            background: transparent;
+        }
+        &:active {
+            box-shadow: 0 0.5rem 1rem rgba(#e2e2e2, 0.2);
+            transform: translateY(-0 0.1rem);
+        }
+    }
+}
+
 @keyframes move-left {
   0% {
       opacity: 0;
