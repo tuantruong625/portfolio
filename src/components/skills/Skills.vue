@@ -1,8 +1,5 @@
 <template>
   <div class="container">
-    <div class="skills__header">
-      <h2>skills</h2>
-    </div>
     <div class="skills">
       <div class="skills__icon">
         <font-awesome-icon class="skills__icon--vue" :icon="[ 'fab', 'vuejs' ]" />

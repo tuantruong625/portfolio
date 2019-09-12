@@ -1,79 +1,58 @@
 .skills {
   display: grid;
-  // grid-template-areas:
-  // 'header header';
-  grid-template-columns: 10rem 10rem;
+  justify-content: center;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
   padding: 1rem;
   padding-top: 0;
-  max-width: 20rem;
-  margin: auto;
-  justify-self: center;
-  
+  margin-top: 6rem;
+
   
   &__icon {
     margin: 0.5rem 0;
     font-size: 1.25rem;
     color: #adb5bd;
-    padding-left: 1.8rem;
-
+    
     &--vue {
-      margin-left: 0.5rem;
       color: #47b784;
     }
 
     &--sketch {
-      margin-left: 0.5rem;
       color: #f89f2e;
     }
 
     &--html {
-      margin-left: 0.5rem;
       color: #e86233;
     }
 
     &--sass {
-      margin-left: 0.5rem;
       color: #c56695;
     }
 
     &--css {
-      margin-left: 0.5rem;
       color: #32a5d7;
     }
 
     &--js {
-      margin-left: 0.5rem;
       color: #f6d34c;
     }
 
     &--figma {
-      margin-left: 0.5rem;
       color: #868e96;
     }
-
-
   }
 }
 
-.skills__header {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
-  padding: 0 1rem;
+
+@media(max-width: 700px) {
+  .skills {
+    grid-template-columns: 10rem 10rem 10rem;
+  }
+  
 }
 
-// @media(max-width: 700px) {
-//     .skills {
-//       grid-template-areas:
-//     'image'
-//     'text';
-//     }
-// }
-
-// @media(max-width: 500px) {
-//   .skills {
-//     grid-template-areas:
-//   'image'
-//   'text';
-//   }
-// }
+@media(max-width: 500px) {
+  .skills {
+    margin-left: 2rem;
+    grid-template-columns: 10rem 10rem;
+  }
+}
