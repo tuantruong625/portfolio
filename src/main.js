@@ -2,13 +2,26 @@ import Vue from 'vue';
 import 'normalize.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faDrawPolygon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import {
-  faLinkedin, faGithub, faDribbble,
+  faLinkedin, faGithub, faDribbble, faVuejs, faSketch, faHtml5, faSass, faCss3, faJs, faFigma,
 } from '@fortawesome/free-brands-svg-icons';
 import App from './App.vue';
 
-library.add(faLinkedin, faGithub, faDribbble);
+library.add(
+  faLinkedin,
+  faGithub,
+  faDribbble,
+  faVuejs,
+  faSketch,
+  faHtml5,
+  faSass,
+  faCss3,
+  faJs,
+  faFigma,
+  faDrawPolygon,
+);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

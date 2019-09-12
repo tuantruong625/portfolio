@@ -27,17 +27,20 @@
 
   <Hero />
   <About />
+  <Skills />
   </div>
 </template>
 
 <script>
 import Hero from '@/components/hero/Hero.vue';
 import About from '@/components/about/About.vue';
+import Skills from '@/components/skills/Skills.vue';
 
 export default {
   components: {
     Hero,
     About,
+    Skills,
   },
   data() {
     return {

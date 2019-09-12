@@ -19,7 +19,6 @@
       <a href="https://github.com/tuantruong625"><font-awesome-icon class="social__links" :icon="[ 'fab', 'github' ]" /></a>
       <a href="https://dribbble.com/tuanntruong"><font-awesome-icon class="social__links" :icon="[ 'fab', 'dribbble' ]" /></a>
     </div>
-
   </div>
 </template>
 
