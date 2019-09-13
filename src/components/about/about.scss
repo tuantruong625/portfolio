@@ -19,10 +19,16 @@
   &__text {
     color: #3B4252;
     grid-area: text;
-
+    
     &--sub-header {
       color: #adb5bd;
       line-height: 1.5;
+    }
+    
+    a {
+      color: #3B4252;
+      text-decoration: none;
+      display: block;
     }
   }
 

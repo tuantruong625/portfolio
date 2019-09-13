@@ -6,9 +6,11 @@
         <p class="about__text--sub-header">
           I always love solving problems and creating things out of nothing.
           Building web applications is the perfect medium for me. Whether you need me to design
-          and build your vision I’m your guy.
+          and/or build your vision I’m your guy.
+        <a href="mailto:tuan.truong.dsgn@gmail.com" class="about__text--email" id="skills">
+          contact me.
+        </a>
         </p>
-        <p id="skills" class="about__text--email">tuan.truong.dsgn@gmail.com</p>
       </div>
       <img class="about__image"  src="@/assets/undraw_web_developer_p3e5.png" alt="web">
       <h2 class="header-text">skills.</h2>
