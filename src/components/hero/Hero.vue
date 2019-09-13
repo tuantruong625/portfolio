@@ -10,11 +10,11 @@
       </a>
     </h1>
     <a
-      href="#"
+      href="#projects"
       class="btn btn---white btn--animated">
       Check out my work 👇
     </a>
-    <div class="social social--animated">
+    <div class="social social--animated" id="about">
       <a href="https://www.linkedin.com/in/tuanntruong/"><font-awesome-icon class="social__links" :icon="[ 'fab', 'linkedin' ]" /></a>
       <a href="https://github.com/tuantruong625"><font-awesome-icon class="social__links" :icon="[ 'fab', 'github' ]" /></a>
       <a href="https://www.behance.net/tuanntruong/"><font-awesome-icon class="social__links" :icon="[ 'fab', 'behance-square' ]" /></a>

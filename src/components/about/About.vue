@@ -10,7 +10,7 @@
         </p>
         <p id="skills" class="about__text--email">tuan.truong.dsgn@gmail.com</p>
       </div>
-      <img class="about__image" id="about" src="@/assets/undraw_web_developer_p3e5.png" alt="web">
+      <img class="about__image"  src="@/assets/undraw_web_developer_p3e5.png" alt="web">
       <h2 class="header-text">skills.</h2>
     </div>
   </div>

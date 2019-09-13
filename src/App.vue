@@ -37,6 +37,7 @@
     <About />
     <Skills />
     <Project />
+    <Contact />
   </div>
 </template>
 
@@ -45,6 +46,7 @@ import Hero from '@/components/hero/Hero.vue';
 import About from '@/components/about/About.vue';
 import Skills from '@/components/skills/Skills.vue';
 import Project from '@/components/projects/Projects.vue';
+import Contact from '@/components/contact/Contact.vue';
 
 export default {
   components: {
@@ -52,6 +54,7 @@ export default {
     About,
     Skills,
     Project,
+    Contact,
   },
   data() {
     return {

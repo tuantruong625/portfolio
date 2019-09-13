@@ -1,5 +1,6 @@
 <template>
   <div class="container" id="projects">
+    <h2 class="header-text projects-header">projects.</h2>
     <div class="project">
       <div class="project__card">
         <img class="project__image" src="@/assets/modeler-screen.png" alt="web">
@@ -82,6 +83,7 @@
         </div>
       </div>
     </div>
+    <h2 class="header-text contact-header" id="contact">contact.</h2>
   </div>
 </template>
 

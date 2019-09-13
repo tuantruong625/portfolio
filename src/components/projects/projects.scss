@@ -6,6 +6,10 @@
   'image image text';
   padding: 1rem;
 
+  &:first-of-type {
+    padding-top: 0;
+  }
+
   &__detail {
     color: #3B4252;
     grid-area: text;
@@ -57,8 +61,13 @@
     max-width: 85%;
     padding: 2rem;
   }
-
 }
+
+.projects-header {
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+
 @media(max-width: 700px) {
     .project {
       grid-template-areas:
