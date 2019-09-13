@@ -33,6 +33,7 @@
         <font-awesome-icon class="skills__icon--wireframe" :icon="[ 'fa', 'draw-polygon' ]" />
         Wireframes
       </div>
+      <h2 class="header-text">projects.</h2>
     </div>
   </div>
 </template>

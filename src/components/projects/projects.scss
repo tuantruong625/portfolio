@@ -6,12 +6,38 @@
   'image image text';
   padding: 1rem;
 
-  &__text {
+  &__detail {
     color: #3B4252;
     grid-area: text;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+    align-self: center;
+    margin-top: 2rem;
 
-    &--sub-header {
+    &--link {
+      &:link,
+      &:visited {
+        color: #adb5bd;
+        margin-right: 1rem;
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: #dee2e6;
+      }
+    }
+    
+    
+    &--header {
+      color: #343a40;
+    }
+    
+    &--paragraph {
+      color: #868e96;
+      line-height: 1.5;
+    }
+
+
+    &--icon {
       color: #adb5bd;
     }
   }
