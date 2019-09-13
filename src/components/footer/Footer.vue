@@ -14,7 +14,7 @@ export default {
 
 <style lang="scss">
 .footer {
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
