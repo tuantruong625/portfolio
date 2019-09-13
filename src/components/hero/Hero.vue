@@ -17,7 +17,7 @@
     <div class="social social--animated">
       <a href="https://www.linkedin.com/in/tuanntruong/"><font-awesome-icon class="social__links" :icon="[ 'fab', 'linkedin' ]" /></a>
       <a href="https://github.com/tuantruong625"><font-awesome-icon class="social__links" :icon="[ 'fab', 'github' ]" /></a>
-      <a href="https://dribbble.com/tuanntruong"><font-awesome-icon class="social__links" :icon="[ 'fab', 'dribbble' ]" /></a>
+      <a href="https://www.behance.net/tuanntruong/"><font-awesome-icon class="social__links" :icon="[ 'fab', 'behance-square' ]" /></a>
     </div>
   </div>
 </template>

@@ -1,33 +1,34 @@
 <template>
   <div id="app">
     <nav class="nav">
-    <span class="nav__logo">
-      truong.
-    </span>
-    <div class="nav__menu">
-      <span @click="toggleNav =! toggleNav">
-        -----
+      <span class="nav__logo">
+        truong.
       </span>
-    </div>
-    <div v-show="toggleNav" class="nav__links">
-      <span class="nav__link">
-        about
-      </span>
-      <span class="nav__link">
-        work
-      </span>
-      <span class="nav__link">
-        contact
-      </span>
-      <span class="nav__link">
-        <button class="nav__button">contact</button>
-      </span>
-    </div>
-  </nav>
+      <div class="nav__menu">
+        <span @click="toggleNav =! toggleNav">
+          -----
+        </span>
+      </div>
+      <div v-show="toggleNav" class="nav__links">
+        <span class="nav__link">
+          about
+        </span>
+        <span class="nav__link">
+          work
+        </span>
+        <span class="nav__link">
+          contact
+        </span>
+        <span class="nav__link">
+          <button class="nav__button">contact</button>
+        </span>
+      </div>
+    </nav>
 
-  <Hero />
-  <About />
-  <Skills />
+    <Hero />
+    <About />
+    <Skills />
+    <Project />
   </div>
 </template>
 
@@ -35,12 +36,14 @@
 import Hero from '@/components/hero/Hero.vue';
 import About from '@/components/about/About.vue';
 import Skills from '@/components/skills/Skills.vue';
+import Project from '@/components/projects/Projects.vue';
 
 export default {
   components: {
     Hero,
     About,
     Skills,
+    Project,
   },
   data() {
     return {
