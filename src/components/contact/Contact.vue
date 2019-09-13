@@ -24,7 +24,7 @@
           id=""
           v-model="message"
           name="message"
-          cols="32"
+
           rows="5"
           class="contact__form-text-area"
         />
@@ -78,6 +78,7 @@ export default {
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 .contact__form-label {
@@ -117,6 +118,13 @@ export default {
     width: 20rem;
     height: auto;
   }
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 @media (max-width: 500px) {
