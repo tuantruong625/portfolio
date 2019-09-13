@@ -1,7 +1,7 @@
 <template>
   <div class="container contact">
     <img class="contact__image" src="@/assets/undraw_envelope_n8lc.png" alt="web">
-    <form class="contact__form">
+    <form class="contact__form" method="POST" action="https://formspree.io/tuan.truong.dsgn@gmail.com">
       <div class="contact__form-group">
         <label for="name" class="contact__form-label">
           Name

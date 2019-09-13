@@ -38,6 +38,7 @@
     <Skills />
     <Project />
     <Contact />
+    <Footer />
   </div>
 </template>
 
@@ -47,6 +48,7 @@ import About from '@/components/about/About.vue';
 import Skills from '@/components/skills/Skills.vue';
 import Project from '@/components/projects/Projects.vue';
 import Contact from '@/components/contact/Contact.vue';
+import Footer from '@/components/footer/Footer.vue';
 
 export default {
   components: {
@@ -55,6 +57,7 @@ export default {
     Skills,
     Project,
     Contact,
+    Footer,
   },
   data() {
     return {
