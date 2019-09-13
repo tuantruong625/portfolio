@@ -10,18 +10,26 @@
         </span>
       </div>
       <div v-show="toggleNav" class="nav__links">
-        <span class="nav__link">
-          about
-        </span>
-        <span class="nav__link">
-          work
-        </span>
-        <span class="nav__link">
-          contact
-        </span>
-        <span class="nav__link">
-          <button class="nav__button">contact</button>
-        </span>
+        <a href="#about" class="nav__link">
+          <span>
+            about
+          </span>
+        </a>
+        <a href="#skills" class="nav__link">
+          <span>
+            skills
+          </span>
+        </a>
+        <a href="#projects" class="nav__link">
+          <span>
+            projects
+          </span>
+        </a>
+        <a href="#contact" class="nav__link">
+          <span>
+            <button class="nav__button">contact</button>
+          </span>
+        </a>
       </div>
     </nav>
 
@@ -74,7 +82,6 @@ export default {
 
 <style lang="scss">
 #app {
-  // max-width: 960px;
   margin: auto;
 }
 
@@ -84,7 +91,10 @@ export default {
   align-items: center;
   background: #121b30;
   color: #e9ecef;
-  padding: 1rem 2rem 0 2rem;
+  width: 100%;
+  position: fixed;
+  padding: 1rem 0;
+  z-index: 5;
 
   &__button {
     padding: 0.5rem;
@@ -93,6 +103,7 @@ export default {
     width: 6rem;
     background: #121b30;
     color: #e9ecef;
+    margin-right: 1rem;
 
     &:hover {
       cursor: pointer;
@@ -103,14 +114,19 @@ export default {
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
     font-weight: 700;
+    margin-left: 1rem;
   }
 }
 
 .nav__links {
+
+  & a {
+    color:#e9ecef;
+    text-decoration: none;
+  }
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color:#e9ecef;
 }
 
 .nav__link {
@@ -126,13 +142,14 @@ export default {
   .nav__links {
     position: absolute;
     z-index: 5;
-    top: 5rem;
+    top: 3rem;
     right: 0;
     flex-direction: column;
     text-align: right;
     background: #121b30;
     width: 100%;
     padding: 0 2rem 0.5rem 2rem;
+    cursor: pointer;
   }
 
   .nav__link {
@@ -142,6 +159,13 @@ export default {
   .nav__menu {
     display: flex;
     justify-content: flex-end;
+    margin-right: 1rem;
   }
+  .nav {
+    &__button {
+      margin-right: 0;
+    }
+  }
+
 }
 </style>

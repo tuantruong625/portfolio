@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="projects">
     <div class="project">
       <div class="project__card">
         <img class="project__image" src="@/assets/modeler-screen.png" alt="web">

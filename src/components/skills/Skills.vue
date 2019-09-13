@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="skills">
+    <div class="skills" >
       <div class="skills__icon">
         <font-awesome-icon class="skills__icon--vue" :icon="[ 'fab', 'vuejs' ]" />
         Vue
@@ -29,7 +29,7 @@
         <font-awesome-icon class="skills__icon--figma" :icon="[ 'fab', 'figma' ]" />
         Figma
       </div>
-      <div class="skills__icon">
+      <div class="skills__icon" >
         <font-awesome-icon class="skills__icon--wireframe" :icon="[ 'fa', 'draw-polygon' ]" />
         Wireframes
       </div>
